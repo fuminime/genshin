@@ -40,7 +40,7 @@ def awake(update: Update, context: CallbackContext):
             text="Uᴘᴅᴀᴛᴇs",
             url=f"https://t.me/{UPDATE_CHANNEL}"),
         InlineKeyboardButton(
-            text="۞‌‌ Sᴜᴘᴘᴏʀᴛ ɢƦᴏᴜᴘ ۞‌‌",",
+            text="۞‌‌ Sᴜᴘᴘᴏʀᴛ ɢƦᴏᴜᴘ ۞‌‌",
             url=f"https://t.me/{SUPPORT_CHAT}"),
         ],
      ]
