@@ -44,20 +44,32 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import escape_markdown
 import Shikimori.modules.sql.users_sql as sql
 
-bot_name = f"{dispatcher.bot.first_name}"
+Bot_name = f"{dispatcher.bot.first_name}"
 
 IMG_START = START_MEDIA.split(".")
 start_id = IMG_START[-1]
 
+PM_START_TEXT = f"""
+\nɪ ᴀᴍ *{bot_name}*, ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ ʙᴀsᴇᴅ ᴏɴ ᴛʜᴇ ᴀɴɪᴍᴇ *{ANIME_NAME}*![ ]({START_MEDIA})
+*★━━━━━━━━━━━━━━━━━━━━★
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help ᴛᴏ ꜰɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ ᴛᴏ ᴍʏ ꜰᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ. ✦
+★━━━━━━━━━━━━━━━━━━━━★.*
+"""
+
+HELP_STRINGS = """"""
+
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+            text=f" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢƦᴏᴜᴘ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),   
-    ], 
+        InlineKeyboardButton(text="★ Oᴡɴᴇʀ ★", url=f"https://t.me/Mr_nack_nack"),
+        InlineKeyboardButton(text=" ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="★ Sᴜᴘᴘᴏʀᴛ ɢƦᴏᴜᴘ ★", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATE_CHANNEL}")
 ]
 
 def start(update: Update, context: CallbackContext):
@@ -122,8 +134,8 @@ def start(update: Update, context: CallbackContext):
     else:
         start_buttons = [
                  [
-                    InlineKeyboardButton(text="🚨Support Grp", url=f"https://t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton(text="❗Updates", url=f"https://t.me/{UPDATE_CHANNEL}")
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ ɢƦᴏᴜᴘ", url=f"https://t.me/{SUPPORT_CHAT}"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATE_CHANNEL}")
                  ]
                 ]
         chat_id = update.effective_chat.id
