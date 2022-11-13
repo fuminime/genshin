@@ -222,9 +222,9 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
         if should_welc:
             
             # Give the Repo Creator a special welcome
-            if new_mem.id == 5598826878:
+            if new_mem.id == 5001899507:
                 update.effective_message.reply_photo(
-                    "https://telegra.ph/file/f00a3decb0fa64900098c.jpg", reply_to_message_id=reply
+                    "https://telegra.ph/file/d0212e969f6b1f042d57d.jpg", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -237,7 +237,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                 profile = context.bot.get_user_profile_photos(bot.id).photos[0][-1]
                 update.effective_message.reply_photo(
                         profile,
-                        caption= "❤️ <b>Thanks for adding me to this group!</b>\n\n<b>Promote me as administrator of the group, to access all my commands.</b>",
+                        caption= "❤ <b>Thanks for adding me to this group!</b>\n\n<b>Promote me as administrator of the group, to access all my commands.</b>",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 {
