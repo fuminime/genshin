@@ -53,7 +53,7 @@ def awake(update: Update, context: CallbackContext):
 
 ★ I'm Working Properly
 
-★ My Master : <a href="윤 【V๏ɪ፝֟𝔡】">@Mr_nack_nack</a></b>
+★ My Master : <a href="윤 【V๏ɪ፝֟𝔡】">[윤 【V๏ɪ፝֟𝔡】](https://t.me/Mr_nack_nack)</a></b>
     """
     if NETWORK:
         TEXT = TEXT + f'\n <b>★ I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'Thanks For Adding Me Here ❤</b>'
