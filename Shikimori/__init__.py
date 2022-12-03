@@ -102,8 +102,8 @@ TIGERS = list(TIGERS)
 #)
 
 # make sure the regex handler can take extra kwargs
-tg.RegexHandler = CustomRegexHandler
-tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandler
+#tg.RegexHandler = CustomRegexHandler
+#tg.CommandHandler = CustomCommandHandler
+#tg.MessageHandler = CustomMessageHandler
 
 
