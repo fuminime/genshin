@@ -7,7 +7,7 @@ if ENV:
     TOKEN = os.environ.get("BOT_TOKEN", None)
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", "None"))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "5001899507"))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
      
