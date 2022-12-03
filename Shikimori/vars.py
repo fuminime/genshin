@@ -11,43 +11,43 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
      
-    ERROR_LOG_CHANNEL = os.environ.get("ERROR_LOG_CHANNEL", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    ERROR_LOG_CHANNEL = os.environ.get("ERROR_LOG_CHANNEL", "-1001668540922")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Mr_nack_nack")
 
     try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "5001899507").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "5001899507").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
-        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
+        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "5001899507").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
-        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())
+        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "5001899507").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
-        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
+        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "5001899507").split())
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
-    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001668540922")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None)
-    API_HASH = os.environ.get("API_HASH", None)
-    DB_URL = os.environ.get("DATABASE_URL")
+    API_ID = os.environ.get("API_ID", "12910042")
+    API_HASH = os.environ.get("API_HASH", "31201ad2becae3dc8e1e55f9ae294cb9")
+    DB_URL = os.environ.get("DATABASE_URL", "postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo")
     DB_URL = DB_URL.replace("postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo", "postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo", 1)
-    FUNC_DB_URL = os.environ.get("FUNC_DB_URL")
-    FUNC_DB_URL = FUNC_DB_URL.replace("postgres://", "postgresql://", 1)
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    ARQ_API = os.environ.get("ARQ_API_BASE_URL", None)
+    FUNC_DB_URL = os.environ.get("FUNC_DB_URL", "postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo")
+    FUNC_DB_URL = FUNC_DB_URL.replace("postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo", "postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo", 1)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://ub:ub123@horivc.cemtd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    ARQ_API = os.environ.get("ARQ_API_BASE_URL", "BMUXJR-WMSSAL-QEXJPP-AHNYFN-ARQ")
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", None).split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -57,32 +57,32 @@ if ENV:
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", True)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
-    TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
-    AI_API_KEY = os.environ.get("AI_API_KEY", None)
-    API_WEATHER = os.environ.get("API_WEATHER", None)
-    WALL_API = os.environ.get("WALL_API", None)
-    REDIS_URL = os.environ.get("REDIS_URL")
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
+    TIME_API_KEY = os.environ.get("TIME_API_KEY", "-xyz")
+    AI_API_KEY = os.environ.get("AI_API_KEY", "SOME1HING_privet_990022")
+    API_WEATHER = os.environ.get("API_WEATHER", "a4d26025620a9902fce9c89996b10495")
+    WALL_API = os.environ.get("WALL_API", "6950f5ds6a3")
+    REDIS_URL = os.environ.get("REDIS_URL", "redis://default:9pmhTFvTxV2LVx9rzuTO@containers-us-west-133.railway.app:6851")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "gojo_support")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
-    ARQ_API_KEY = os.environ.get("ARQ_API", None)
-    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-    APOD_API_KEY = os.environ.get("APOD_API_KEY", None)
-    ANIME_NAME = os.environ.get("ANIME_NAME", "Shikimori's Not Just a Cutie")
-    START_MEDIA = os.environ.get("START_MEDIA", "https://telegra.ph/file/9235d57807362b4e227a3.mp4")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "micchon_shikimori_bot")
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Shikimori_bot_Updates")
-    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4")
-    BOT_ID = int(os.environ.get("BOT_ID", "5169508699"))
-    STATS_IMG = os.environ.get("STATS_IMG", None)
-    NETWORK = os.environ.get("NETWORK", None)
-    NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", None)
-    MEDIA_GM = os.environ.get("MEDIA_GM", None)
-    MEDIA_GN = os.environ.get("MEDIA_GN", None)
+    ARQ_API_KEY = os.environ.get("ARQ_API", "BMUXJR-WMSSAL-QEXJPP-AHNYFN-ARQ")
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "gojobot7")
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "37c5470e-7b72-45c4-829f-395a2d83b760")
+    APOD_API_KEY = os.environ.get("APOD_API_KEY", "ITDcBLGdFJt5h2zv9Bbm3lLCg4q3PEAK8YhfZ5HW")
+    ANIME_NAME = os.environ.get("ANIME_NAME", "Jᴜᴊᴜᴛsᴜ Kᴀɪsᴇɴ")
+    START_MEDIA = os.environ.get("START_MEDIA", "https://telegra.ph/file/f2d390bad48ee15c36011.mp4")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Gojoa_satoru_bot")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "gojo_bot_updates")
+    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://telegra.ph/file/a6c30cd075df16dae7bb5.mp4")
+    BOT_ID = int(os.environ.get("BOT_ID", "5484116052"))
+    STATS_IMG = os.environ.get("STATS_IMG", "https://telegra.ph/file/1f5aa2587aace405edca8.jpg")
+    NETWORK = os.environ.get("NETWORK", "【V๏ɪ፝֟𝔡】»Network«")
+    NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", "VoidxNetwork")
+    MEDIA_GM = os.environ.get("MEDIA_GM", "https://telegra.ph/file/a6c30cd075df16dae7bb5.mp4")
+    MEDIA_GN = os.environ.get("MEDIA_GN", "https://telegra.ph/file/bfe511a9f3b1bf225c144.mp4")
     MEDIA_HELLO = os.environ.get("MEDIA_HELLO", None)
-    MEDIA_BYE = os.environ.get("MEDIA_BYE", None)
-    INLINE_IMG = os.environ.get("INLINE_IMG", None)
-    OWNER_WELCOME_MEDIA = os.environ.get("OWNER_WELCOME_MEDIA", None)
+    MEDIA_BYE = os.environ.get("MEDIA_BYE", "https://telegra.ph/file/bfe511a9f3b1bf225c144.mp4")
+    INLINE_IMG = os.environ.get("INLINE_IMG", "https://telegra.ph/file/1f5aa2587aace405edca8.jpg")
+    OWNER_WELCOME_MEDIA = os.environ.get("OWNER_WELCOME_MEDIA", "https://telegra.ph/file/d0212e969f6b1f042d57d.jpg")
 
     try:
         WHITELIST_CHATS = {int(x) for x in os.environ.get('WHITELIST_CHATS', "").split()}
@@ -184,17 +184,10 @@ else:
             "Your blacklisted chats list does not contain valid integers.")
             
 PM_START_TEXT = """
-════════《✧》════════
-𝙺𝚘𝚗𝚗𝚒𝚌𝚑𝚒𝚠𝚊 *{} - 𝚜𝚊𝚗*
-
-𝙸 𝚊𝚖 *{}*, 𝚊 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝 𝚋𝚊𝚜𝚎𝚍 𝚘𝚗 𝚝𝚑𝚎 𝚊𝚗𝚒𝚖𝚎 *{}*.
-════════════════
-♡ 𝐔𝐬𝐞𝐫𝐬: `{}`
-♡ 𝐂𝐡𝐚𝐭𝐬: `{}`
-♡ 𝐔𝐩𝐭𝐢𝐦𝐞: `{}`
-════════════════
-𝚄𝚜𝚎 `/help` 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚖𝚢 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜.
-════════《✧》════════
+\nɪ ᴀᴍ *{Bot_name}*, ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ ʙᴀsᴇᴅ ᴏɴ ᴛʜᴇ ᴀɴɪᴍᴇ *{ANIME_NAME}*![ ]({START_MEDIA})
+*★━━━━━━━━━━━━━━━━━━━━★
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help ᴛᴏ ꜰɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ ᴛᴏ ᴍʏ ꜰᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ. ✦
+★━━━━━━━━━━━━━━━━━━━━★.*
 """
 
 HELP_STRINGS = """
