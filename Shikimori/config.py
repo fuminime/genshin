@@ -18,7 +18,7 @@ class Config(object):
     API_ID = "12910042"  # integer value, dont use ""
     API_HASH = "31201ad2becae3dc8e1e55f9ae294cb9"
     BOT_TOKEN = "5484116052:AAG_ZkxRfqyMbprxMYx6vRGQXC_NoFX2SDM"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = "5001899507"  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_ID = 5001899507  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "Mr_nack_nack"
     SUPPORT_CHAT = "gojo_support"  # Your own group for support, do not add the @
     LOG_CHANNEL = "-1001668540922"  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
