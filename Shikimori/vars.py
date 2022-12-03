@@ -43,7 +43,7 @@ if ENV:
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
     DB_URL = os.environ.get("DATABASE_URL")
-    DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
+    DB_URL = DB_URL.replace("postgres://", "postgres://nslschmo:s_JMh5gRYKFZGl34GngpaHUi2_R-bBxm@peanut.db.elephantsql.com/nslschmo", 1)
     FUNC_DB_URL = os.environ.get("FUNC_DB_URL")
     FUNC_DB_URL = FUNC_DB_URL.replace("postgres://", "postgresql://", 1)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
