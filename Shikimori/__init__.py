@@ -75,14 +75,14 @@ print("[INFO]: PYROGRAM CLIENT INITIALIZED")
 # PTB Client
 print("[INFO]: INITIALIZING PTB CLIENT")
 defaults = tg.Defaults(run_async=True)
-#updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-#dispatcher = updater.dispatcher
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+dispatcher = updater.dispatcher
 print("[INFO]: PTB CLIENT INITIALIZED")
 
 # Telethon Client
 print("[INFO]: INITIALIZING TELETHON CLIENT")
-#telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-#print("[INFO]: TELETHON CLIENT INITIALIZED")
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
+print("[INFO]: TELETHON CLIENT INITIALIZED")
 
 # Updating Sudo list
 DRAGONS.add(OWNER_ID)
@@ -95,15 +95,15 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-#from Shikimori.modules.helper_funcs.handlers import (
- #   CustomCommandHandler,
- #   CustomMessageHandler,
-  #  CustomRegexHandler,
-#)
+from Shikimori.modules.helper_funcs.handlers import (
+    CustomCommandHandler,
+    CustomMessageHandler,
+    CustomRegexHandler,
+)
 
-# make sure the regex handler can take extra kwargs
-#tg.RegexHandler = CustomRegexHandler
-#tg.CommandHandler = CustomCommandHandler
-#tg.MessageHandler = CustomMessageHandler
+ make sure the regex handler can take extra kwargs
+tg.RegexHandler = CustomRegexHandler
+tg.CommandHandler = CustomCommandHandler
+tg.MessageHandler = CustomMessageHandler
 
 
