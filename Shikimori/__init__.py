@@ -81,8 +81,8 @@ print("[INFO]: PTB CLIENT INITIALIZED")
 
 # Telethon Client
 print("[INFO]: INITIALIZING TELETHON CLIENT")
-telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-print("[INFO]: TELETHON CLIENT INITIALIZED")
+#telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
+#print("[INFO]: TELETHON CLIENT INITIALIZED")
 
 # Updating Sudo list
 DRAGONS.add(OWNER_ID)
