@@ -15,14 +15,14 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    BOT_TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "SOME1HING"
-    SUPPORT_CHAT = "tyranteyeeee"  # Your own group for support, do not add the @
+    API_ID = "12910042"  # integer value, dont use ""
+    API_HASH = "31201ad2becae3dc8e1e55f9ae294cb9"
+    BOT_TOKEN = "5484116052:AAG_ZkxRfqyMbprxMYx6vRGQXC_NoFX2SDM"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = "5001899507"  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Mr_nack_nack"
+    SUPPORT_CHAT = "gojo_support"  # Your own group for support, do not add the @
     LOG_CHANNEL = (
-        -1001150905176
+        "-1001668540922"
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -47,32 +47,27 @@ class Config(object):
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
-    WORKERS = (
-        8  # Number of subthreads to use. Set as number of threads your processor uses
-    )
+    WORKERS = ("8") # Number of subthreads to use. Set as number of threads your processor uses
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
-    CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
-    )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
-    WALL_API = (
-        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
-    )
-    AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
+    CASH_API_KEY = ("-xyz")  # Get your API key from https://www.alphavantage.co/support/#api-key
+    
+    TIME_API_KEY = "-xyz"  # Get your API key from https://timezonedb.com/api
+    WALL_API = ("awoo")# For wallpapers, get one from https://wall.alphacoders.com/api.php
+    AI_API_KEY = "SOME1HING_privet_990022"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-    ERROR_LOG_CHANNEL = -1001501815938  # needed to make sure 'save from' messages persist
-    HEROKU_API_KEY = 2088106582  # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
+    ERROR_LOG_CHANNEL = "-1001668540922"  # needed to make sure 'save from' messages persist
+    HEROKU_API_KEY = "37c5470e-7b72-45c4-829f-395a2d83b760"  # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
     HEROKU_APP_NAME = (
-        "awoo"  # Enter the Heroku app name here (Must an exact same name with your input above)
+        "gojobot7"  # Enter the Heroku app name here (Must an exact same name with your input above)
     )
     ARQ_API = "awoo"
     APOD_API_KEY = "awoo"
     REDIS_URL = "awoo"
     ANIME_NAME = "Shikimori's Not Just a Cutie"
-    START_MEDIA = "https://telegra.ph/file/9235d57807362b4e227a3.mp4"
-    BOT_USERNAME = "micchon_shikimori_bot"
-    UPDATE_CHANNEL = "Shikimori_bot_Updates"
+    START_MEDIA = "https://telegra.ph/file/f2d390bad48ee15c36011.mp4"
+    BOT_USERNAME = "Gojoa_satoru_bot"
+    UPDATE_CHANNEL = "gojo_bot_updates"
     ALIVE_MEDIA = "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
     BOT_ID = 5169508699
     STATS_IMG = "awoo"
