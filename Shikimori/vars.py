@@ -75,7 +75,7 @@ if ENV:
     ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4")
     BOT_ID = int(os.environ.get("BOT_ID", "5169508699"))
     STATS_IMG = os.environ.get("STATS_IMG", None)
-    NETWORK = os.environ.get("NETWORK", None)
+    #NETWORK = os.environ.get("NETWORK", None)
     NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", None)
     MEDIA_GM = os.environ.get("MEDIA_GM", None)
     MEDIA_GN = os.environ.get("MEDIA_GN", None)
