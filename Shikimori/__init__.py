@@ -76,7 +76,7 @@ print("[INFO]: PYROGRAM CLIENT INITIALIZED")
 print("[INFO]: INITIALIZING PTB CLIENT")
 defaults = tg.Defaults(run_async=True)
 #updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-dispatcher = updater.dispatcher
+#dispatcher = updater.dispatcher
 print("[INFO]: PTB CLIENT INITIALIZED")
 
 # Telethon Client
