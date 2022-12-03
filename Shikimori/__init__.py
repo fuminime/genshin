@@ -32,7 +32,7 @@ from telethon import TelegramClient
 from Python_ARQ import ARQ
 from telethon.sessions import MemorySession
 
-StartTime = time.time(12:00)
+#StartTime = time.time(12:00)
 
 # enable logging
 FORMAT = "[Shikimori] %(message)s"
