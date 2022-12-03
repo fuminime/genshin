@@ -46,8 +46,8 @@ logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger('[Shikimori]')
-LOGGER.info("Shikimori is starting. | Built by Yun. | Licensed under GPLv3.")
-LOGGER.info("Handled by: github.com/yunxvoid (t.me/Mr_nack_nack)")
+LOGGER.info("Shikimori is starting. | Built by SOME1HING. | Licensed under GPLv3.")
+LOGGER.info("Handled by: github.com/SOME-1HING (t.me/SOME1HING)")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
