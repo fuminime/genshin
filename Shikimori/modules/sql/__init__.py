@@ -30,11 +30,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 
-if DB_URI and DB_URI.startswith("postgres://"): 
-     DB_URI = DB_URI.replace("postgres://", "postgresql://", 1) 
+if DB_URL and DB_URL.startswith("postgres://"): 
+     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1) 
   
 def start() -> scoped_session: 
-     engine = create_engine(DB_URI, client_encoding="utf8") 
+     engine = create_engine(DB_URL, client_encoding="utf8") 
      log.info("[PostgreSQL] Connecting to database......")
 
 
